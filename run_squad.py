@@ -30,10 +30,8 @@ import six
 import tensorflow as tf
 
 flags = tf.flags
-
 FLAGS = flags.FLAGS
 
-## Required parameters
 flags.DEFINE_string("bert_config_file", None, "the pre-trained BERT model. This specifies the model architecture.")
 flags.DEFINE_string("vocab_file", None, "The vocabulary file that the BERT model was trained on.")
 flags.DEFINE_string("output_dir", None, "The output directory where the model checkpoints will be written.")
